@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #FAFAFA;
+    box-shadow: 0px 0px 10px #C0C0C0;
 }
 
 .action {
@@ -27,11 +28,9 @@
 }
 
 .action:hover {
-    border: 3px solid #C0C0C0;
-    box-shadow: 0px 0px 10px #C0C0C0;
+    background-color: #f5f3f3;
 }
 
 .action:active {
-    border: 3px solid #A0A0A0;
-    box-shadow: 0px 0px 5px #A0A0A0;
+    background-color: #121214;
 }

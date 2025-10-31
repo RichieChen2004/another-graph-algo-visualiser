@@ -1,0 +1,35 @@
+.wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.board {
+    position: absolute;
+    width: 400vw;
+    height: 400vh;
+    left: -150vw;
+    top: -150vh;
+    background-size: 30px 30px;
+    background-image: radial-gradient(circle, #b8b8b8bf 1px, rgba(0, 0, 0, 0) 1px);
+    cursor: grab;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.boardDragging {
+    position: absolute;
+    width: 400vw;
+    height: 400vh;
+    left: -150vw;
+    top: -150vh;
+    background-size: 30px 30px;
+    background-image: radial-gradient(circle, #b8b8b8bf 1px, rgba(0, 0, 0, 0) 1px);
+    cursor: grabbing;
+    transform-origin: center center;
+    will-change: transform;
+}

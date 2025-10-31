@@ -1,0 +1,11 @@
+<div id="board-wrapper" class="wrapper">
+    <div 
+        #board
+        id="board" 
+        [class]="grabbingBoard() ? 'boardDragging' : 'board'"
+        (mousedown)="handleOnMouseDown($event)"
+        (mouseup)="handleOnMouseUp()"
+        (mousemove)="handleOnMouseMove($event)"
+        (mouseleave)="handleOnMouseUp()"
+    ></div>
+</div>

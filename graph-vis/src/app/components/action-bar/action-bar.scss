@@ -1,36 +1,38 @@
 .wrapper {
     position: absolute;
-    bottom: 1%;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
     height: 70px;
-    border: 3px solid #F3F3F3;
+    border: 3px solid var(--border-color);
     border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #FAFAFA;
-    box-shadow: 0px 0px 10px #C0C0C0;
+    background-color: var(--background-primary);
+    box-shadow: 0px 0px 10px var(--shadow-color);
 }
 
 .action {
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: var(--background-secondary);
     border-radius: 15px;
-    border: 3px solid #F3F3F3;
+    border: 3px solid var(--border-color);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: var(--text-primary);
 }
 
 .action:hover {
-    background-color: #f5f3f3;
+    background-color: var(--hover-color);
 }
 
 .action:active {
-    background-color: #121214;
+    background-color: var(--button-active);
+    color: var(--text-active);
 }

@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global CSS Variables for theming */
+:root {
+  /* Light theme (default) */
+  --background-primary: #FFFFFF;
+  --background-secondary: #FAFAFA;
+  --border-color: #F3F3F3;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --shadow-color: #C0C0C0;
+  --hover-color: #f5f3f3;
+  --grid-color: #b8b8b8bf;
+  --button-active: #121214;
+  --text-active: #FFFFFF;
+  
+  /* UI Elements */
+  --nav-background: var(--background-secondary);
+  --nav-border: var(--border-color);
+  --nav-shadow: var(--shadow-color);
+}
+
+/* Dark theme */
+body.dark-mode {
+  --background-primary: #121214;
+  --background-secondary: #1E1E1F;
+  --border-color: #2C2C2E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8B8B8;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --hover-color: #2C2C2E;
+  --grid-color: rgba(184, 184, 184, 0.2);
+  --button-active: #FFFFFF;
+  --text-active: #000000;
+
+  /* Apply dark theme */
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+/* Global styles */
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

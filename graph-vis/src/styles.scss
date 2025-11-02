@@ -10,7 +10,9 @@
   --hover-color: #f5f3f3;
   --grid-color: #b8b8b8bf;
   --button-active: #121214;
+  --button-active-border: #2C2C2E;
   --text-active: #FFFFFF;
+  --icon-stroke-color: #000000;
   
   /* UI Elements */
   --nav-background: var(--background-secondary);
@@ -29,7 +31,9 @@ body.dark-mode {
   --hover-color: #2C2C2E;
   --grid-color: rgba(184, 184, 184, 0.2);
   --button-active: #FFFFFF;
+  --button-active-border: #F3F3F3;
   --text-active: #000000;
+  --icon-stroke-color: #FFFFFF;
 
   /* Apply dark theme */
   background-color: var(--background-primary);

@@ -13,12 +13,13 @@
     align-items: center;
     background-color: var(--background-primary);
     box-shadow: 0px 0px 10px var(--shadow-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .action {
     width: 50px;
     height: 50px;
-    background-color: var(--background-secondary);
+    background-color: var(--background-primary);
     border-radius: 15px;
     border: 3px solid var(--border-color);
     display: flex;
@@ -26,6 +27,22 @@
     align-items: center;
     cursor: pointer;
     color: var(--text-primary);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Make SVG icons outlined using the theme variable. This will override inline fill attributes. */
+.action svg {
+    fill: var(--icon-stroke-color);
+    stroke: var(--icon-stroke-color);
+}
+
+#edge svg {
+    fill: none;
+}
+
+.action:active svg {
+    stroke: var(--text-active);
+    fill: var(--text-active);
 }
 
 .action:hover {
@@ -34,5 +51,6 @@
 
 .action:active {
     background-color: var(--button-active);
+    border-color: var(--button-active-border);
     color: var(--text-active);
 }

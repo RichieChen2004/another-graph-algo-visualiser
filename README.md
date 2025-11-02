@@ -1,2 +1,2 @@
 # another-graph-algo-visualiser
-Experimenting with Angular and D3.js to create a graph algorithmic visualiser
+Experimenting with Angular and Go to create a graph algorithmic visualiser

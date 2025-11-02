@@ -22,6 +22,11 @@
     cursor: pointer;
 }
 
+.settings-item svg {
+    fill: var(--icon-stroke-color);
+    stroke: var(--icon-stroke-color);
+}
+
 .settings-item:hover {
     background-color: var(--hover-color);
 }

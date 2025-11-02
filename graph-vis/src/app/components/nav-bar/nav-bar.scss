@@ -68,6 +68,11 @@
     }
 }
 
+.nav-top svg {
+    fill: var(--icon-stroke-color);
+    stroke: var(--icon-stroke-color);
+}
+
 .collapse svg {
     transition: width 0.3s ease-in-out;
 }
